@@ -96,6 +96,7 @@ export async function add3DViewer(
   controls.dampingFactor = 0.08;
   controls.minDistance   = 20;
   controls.maxDistance   = 150;
+  controls.maxPolarAngle = Math.PI / 2;
   controls.update();
 
   // ── Ground occluder ────────────────────────────────────────────────────────
