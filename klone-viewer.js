@@ -72,7 +72,8 @@ export async function add3DViewer(
 
   // ── Renderer ───────────────────────────────────────────────────────────────
   const renderer = new THREE.WebGLRenderer({ antialias: true });
-  renderer.setPixelRatio(window.devicePixelRatio);
+  const dpr = 1;
+  renderer.setPixelRatio(dpr);
   container.appendChild(renderer.domElement);
 
   // ── Scene ──────────────────────────────────────────────────────────────────
